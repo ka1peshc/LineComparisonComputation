@@ -7,7 +7,7 @@ namespace LIneComputation
         static double calDistance()
         {
             double dist=0;
-            Console.WriteLine("Line 1 Enter Points according x1 y1 x2 y2 ");
+            Console.WriteLine("Enter Points according x1 y1 x2 y2 ");
             int x1 = Convert.ToInt32(Console.ReadLine());
             int y1 = Convert.ToInt32(Console.ReadLine());
             int x2 = Convert.ToInt32(Console.ReadLine());
@@ -28,6 +28,14 @@ namespace LIneComputation
             if (line1 == line2)
             {
                 Console.WriteLine("Lines are equal");
+            }
+            else if (line1 > line2)
+            {
+                Console.WriteLine("line 1 is bigger line 2");
+            }
+            else
+            {
+                Console.WriteLine("line 2 is bigger line 1");
             }
 
         }
